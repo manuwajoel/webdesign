@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS RESET STARTS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* CSS RESET ENDS */
+      .grand-parent {
+        height: 100px;
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .parent-1 {
+        height: 50px;
+        background-color: antiquewhite;
+        width: 50px;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .parent-2 {
+        display: flex;
+      }
+      .child {
+        height: 50px;
+        width: 50px;
+        background-color: dimgray;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .hero-section {
+        height: 400px;
+        background-color: dimgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section-buttion {
+        height: 75px;
+        width: 100px;
+        background-color: antiquewhite;
+        margin: 20px;
+      }
+      .gallery {
+        display: flex;
+      }
+      .child-1 {
+        height: 200px;
+        width: 50%;
+        background-color: burlywood;
+      }
+      .child-2 {
+        height: 200px;
+        width: 50%;
+        background-color: darkgrey;
+      }
+      #reverse {
+        flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent">
+      <div class="parent-1" id="logo"></div>
+      <div class="parent-2" id="nav-list">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+      </div>
+    </div>
+    <section class="hero-section">
+      <div class="section-buttion" id="one"></div>
+      <div class="section-buttion" id="two"></div>
+    </section>
+    <section class="gallery">
+      <div class="child-1"></div>
+      <div class="child-2"></div>
+    </section>
+    <section class="gallery" id="reverse">
+      <div class="child-1"></div>
+      <div class="child-2"></div>
+    </section>
+  </body>
+</html>

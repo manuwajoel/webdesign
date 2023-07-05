@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      .parent {
+        background-color: #aab3d8;
+        height: 700px;
+        display: flex;
+        /* BY DEFAULT - WHEN AN ELEMENT TAKES A DISPLAY VALUE OF "flex" THE FLEX-DIRECTION EQUAL ROW */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+
+        /* REVERSE THE DIRECTION OF THE FLEX-CHILDREN */
+        /* flex-direction: row-reverse; */
+        /* MAIN AXIS | ROW |HORIZONTAL-AXIS */
+        /* justify-content: start; */
+        justify-content: center;
+        /* justify-content: end; */
+
+        /* CROSS AXIS | COLUMN | VERTICAL AXIS */
+        /* align-items: start; */
+        /* align-items: end; */
+        /* align-items: center; */
+
+        /* WRAPPING A CONTENT ONTO A NEW LINE */
+        flex-wrap: wrap;
+      }
+
+      .child {
+        background: #cfe7d3;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        color: #fff;
+        font-size: 60px;
+      }
+      #first {
+        background: #a42843;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" id="first">1</div>
+      <div class="child" id="second">2</div>
+      <div class="child" id="third">3</div>
+      <div class="child" id="four">4</div>
+      <div class="child" id="five">5</div>
+      <div class="child" id="six">6</div>
+    </div>
+  </body>
+</html>

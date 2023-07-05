@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOX MODEL</title>
+    <style>
+      /* CSS RESET */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+      .a {
+        text-align: center;
+      }
+      body {
+        background-color: grey;
+      }
+      header {
+        background: url("1d70ac5f8541bb8885f42cba576c53ec.jpg") no-repeat center
+          center/cover;
+        height: 650px;
+        font-family: "Dancing Script", cursive;
+        width: 100%;
+        padding: 270px;
+      }
+      section {
+        height: 200px;
+        padding: 40px 120px 40px 120px;
+      }
+      footer {
+        height: 50px;
+        background-color: grey;
+        /* All round spacing inside */
+        /* padding: 50px;
+        margin: 50px; */
+        /* Target where the spacing is applied */
+        /* padding-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-right: 30px; */
+
+        /* Top Right Bottom Left */
+        padding: 10px 30px 10px 30px;
+
+        /* Top Right Bottom Left */
+        /* margin: 10px 30px 10px 30px; */
+      }
+      .up {
+        color: #fff;
+        background-color: darkred;
+        padding: 20px;
+        text-decoration: none;
+        margin-right: 30px;
+      }
+      .in {
+        color: #fff;
+        background-color: black;
+        padding: 20px;
+        text-decoration: none;
+        margin-right: 30px;
+      }
+      .b {
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- AN IMAGE SHOULD BE THE BACKGROUND -->
+    <header class="a">
+      <h1>GUTEN MORGEN</h1>
+    </header>
+
+    <section class="a">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione alias
+        rem, quidem facere qui corporis esse cum eveniet nobis autem incidunt
+        enim cumque, culpa deserunt mollitia velit sapiente dolorum molestiae?
+      </p>
+
+      <div class="b">
+        <a href="" class="up">Sign Up</a>
+        <a href="" class="in">Sign in</a>
+      </div>
+    </section>
+
+    <!-- A COLOR SHOULD BE THE BACKGROUNDS -->
+    <footer class="a">
+      <p>copyright &copy; 2023</p>
+    </footer>
+  </body>
+</html>

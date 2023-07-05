@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position_Relative</title>
+  </head>
+  <style>
+    .ancestor {
+      height: 500px;
+      border: 2px solid blue;
+      width: 100%;
+      position: relative;
+    }
+    .black {
+      background-color: violet;
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      /* bottom: 20%; */
+      top: 0;
+      right: 40%;
+    }
+    .yellow {
+      background-color: aqua;
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      right: 0;
+    }
+    h1 {
+      /* position: absolute; */
+      /* top: 0; */
+      bottom: 50%;
+      /* left: 0; */
+      right: 40%;
+    }
+  </style>
+  <body>
+    <div class="ancestor">
+      <div class="black"></div>
+      <div class="yellow"></div>
+    </div>
+    <h1>Move me around</h1>
+  </body>
+</html>
